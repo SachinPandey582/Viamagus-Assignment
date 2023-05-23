@@ -18,16 +18,18 @@ const Login = () => {
       height="200px"
     >
       <Flex justifyContent="center" alignItems="center">
-        <Box
+        <Box 
+        width={"100%"}
           maxW="576px"
           maxH={"687px"}
           background="white"
-          borderRadius="4px"
+          borderRadius="10px"
           boxShadow="md"
           marginTop="100px"
         >
           <Box
-            boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}
+            boxShadow={"rgba(0, 0, 0, 0.16) 0px 1px 4px"}
+            
             h={"56px"}
             className="Center"
           >
@@ -39,13 +41,15 @@ const Login = () => {
             />
           </Box>
           <Box
+          
             maxW={"577px"}
             h={"684px"}
             w={"90%"}
             m={"auto"}
+         
             padding={"0px 10%"}
           >
-            <form action="">
+            <form style={{marginBottom:"20px"}} action="">
               <Center>
                 <Text fontSize={"3xl"} color={"#60cb59"} fontWeight={"bold"}>
                   Login
@@ -67,14 +71,15 @@ const Login = () => {
                 id="usrname"
                 border={"none"}
                 borderRadius={"none"}
-                borderBottom={"2px solid red"}
+                borderBottom={"2px solid grey"}
                 minLength="3"
                 maxLength="30"
                 mt={5}
                 autoComplete="off"
-                placeholder="Enter your Full Name"
+                placeholder="Name"
                 _placeholder={{
-                  color: "green", 
+                  color:"#60cb59"  ,
+                  fontSize:"25px" 
                 }}
                 required
               />
@@ -86,13 +91,15 @@ const Login = () => {
                 mt={5}
                 border={"none"}
                 borderRadius={"none"}
-                borderBottom={"2px solid red"}
+                borderBottom={"2px solid grey"}
                 minLength="3"
                 maxLength="30"
                 autoComplete="off"
-                placeholder="Enter your Password"
+                placeholder=" Password"
                 _placeholder={{
-                  color: "green", 
+                  color:"#60cb59"  ,
+                  fontSize:"25px" 
+                  
                 }}
                 required
               />
@@ -103,20 +110,22 @@ const Login = () => {
                 colorScheme=""
                 bg={"#60cb59"}
                 size="md"
+                h={"50px"}
                 w={"100%"}
                 m={"auto"}
+                borderRadius={30}
               >
-                Button
+              Sign In
               </Button>
             </form>
 
-            <Box className="sepratethemfull">
-              <Box>Forgot Password</Box>
-              <Text color={"red"}>New User? Sign Up</Text>
+            <Box className="sepratethemfull" mb={"25px"}>
+              <Box fontWeight={"bold"}>Forgot Password</Box>
+              <Text fontWeight={"bold"} color={"red"}>New User? Sign Up</Text>
             </Box>
-            <br />
-            <Center>or</Center>
-            <br />
+            
+            <Center fontWeight={"bold"} mb={"25px"}>or</Center>
+          
             <Button bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
               <Image
                bg={"white"}
@@ -131,7 +140,7 @@ const Login = () => {
             </Button>
             <br />
             <br />
-            <Button bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
+            <Button p={1} bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
               <Image
               bg={"white"}
               p={1}

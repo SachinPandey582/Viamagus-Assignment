@@ -10,8 +10,10 @@ export default function DatePage() {
 
   const calculateTimeDifference = () => {
     const timeDifference = Math.abs(secondValue.getTime() - firstValue.getTime());
-
+console.log(timeDifference,"this is the timedeifference")
+// here i am getting everything in seconds *1000 
     let hours = Math.floor(timeDifference / (1000 * 60 * 60));
+    console.log(hours)
     let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
     let days = Math.floor(hours / 24);
