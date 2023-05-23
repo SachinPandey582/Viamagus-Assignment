@@ -15,7 +15,7 @@ const Login = () => {
       backgroundImage="url('https://media.istockphoto.com/id/1045035862/photo/canopy-of-jungle.jpg?s=612x612&w=0&k=20&c=zZOhcB3LZYJMKPtXaXWRIeMOIV144JO6yc2VMekP-bI=')"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
-      height="200px"
+      height="300px"
     >
       <Flex justifyContent="center" alignItems="center">
         <Box 
