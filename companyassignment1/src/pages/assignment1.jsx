@@ -1,103 +1,154 @@
-import React from 'react'
-import "../Styles/Login.css"
-import { Box, Button, Center, Flex, Image, Input, Text } from '@chakra-ui/react'
+import React from "react";
+import "../Styles/Login.css";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  Image,
+  Input,
+  Text,
+} from "@chakra-ui/react";
 const Login = () => {
   return (
     <Box
-    backgroundImage="url('https://media.istockphoto.com/id/1045035862/photo/canopy-of-jungle.jpg?s=612x612&w=0&k=20&c=zZOhcB3LZYJMKPtXaXWRIeMOIV144JO6yc2VMekP-bI=')"
-    backgroundRepeat="no-repeat"
-    backgroundSize="cover"
-    height="200px"
-  >
-    <Flex
-      
-      justifyContent="center"
-      alignItems="center"
+      backgroundImage="url('https://media.istockphoto.com/id/1045035862/photo/canopy-of-jungle.jpg?s=612x612&w=0&k=20&c=zZOhcB3LZYJMKPtXaXWRIeMOIV144JO6yc2VMekP-bI=')"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
+      height="200px"
     >
-      <Box
-        width="400px"
-        h={500}
-        
-        background="white"
-        borderRadius="4px"
-        boxShadow="md"
-        marginTop="100px"
-      >
-        <Box boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} h={"60px"} className='Center'>
+      <Flex justifyContent="center" alignItems="center">
+        <Box
+          maxW="576px"
+          maxH={"687px"}
+          background="white"
+          borderRadius="4px"
+          boxShadow="md"
+          marginTop="100px"
+        >
+          <Box
+            boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}
+            h={"56px"}
+            className="Center"
+          >
+            <Image
+              w={"82px"}
+              h={"24px"}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
+              alt="AmazonLogo"
+            />
+          </Box>
+          <Box
+            maxW={"577px"}
+            h={"684px"}
+            w={"90%"}
+            m={"auto"}
+            padding={"0px 10%"}
+          >
+            <form action="">
+              <Center>
+                <Text fontSize={"3xl"} color={"#60cb59"} fontWeight={"bold"}>
+                  Login
+                </Text>
+              </Center>
+              <Box>
+                <Image
+                  w={"100%"}
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe5Kl9bfl5O2Nu3jvTWsYzlA9NFOoiQID_xiPux1c2C-YEnZBT"
+                  alt="imageOfTree"
+                />
+              </Box>
+              <br />
+              <Input
+                type="email"
+                className="inputelements"
+                bg={"none"}
+                name="name"
+                id="usrname"
+                border={"none"}
+                borderRadius={"none"}
+                borderBottom={"2px solid red"}
+                minLength="3"
+                maxLength="30"
+                mt={5}
+                autoComplete="off"
+                placeholder="Enter your Full Name"
+                _placeholder={{
+                  color: "green", 
+                }}
+                required
+              />
+              <Input
+                type="password"
+                className="inputelements"
+                name="name"
+                id="usrname"
+                mt={5}
+                border={"none"}
+                borderRadius={"none"}
+                borderBottom={"2px solid red"}
+                minLength="3"
+                maxLength="30"
+                autoComplete="off"
+                placeholder="Enter your Password"
+                _placeholder={{
+                  color: "green", 
+                }}
+                required
+              />
+              <br />
+              <br />
+              <Button
+                type="submit"
+                colorScheme=""
+                bg={"#60cb59"}
+                size="md"
+                w={"100%"}
+                m={"auto"}
+              >
+                Button
+              </Button>
+            </form>
 
-  <Image  w={100} h={8} 
-  src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png' alt='AmazonLogo'/>
-
+            <Box className="sepratethemfull">
+              <Box>Forgot Password</Box>
+              <Text color={"red"}>New User? Sign Up</Text>
+            </Box>
+            <br />
+            <Center>or</Center>
+            <br />
+            <Button bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
+              <Image
+               bg={"white"}
+               p={1}
+               mr={15}
+                h={"30px"}
+                w={"30px"}
+                src="https://pbs.twimg.com/card_img/1656560674347053056/fnoKTsp6?format=png&name=small"
+                alt=""
+              />
+              <Text>CONTINUE WITH GOOGLE</Text>
+            </Button>
+            <br />
+            <br />
+            <Button bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
+              <Image
+              bg={"white"}
+              p={1}
+               mr={15}
+                h={"30px"}
+                w={"30px"}
+                src="https://e7.pngegg.com/pngimages/991/568/png-clipart-facebook-logo-computer-icons-facebook-logo-facebook-thumbnail.png"
+                alt=""
+              />
+              <Text>CONTINUE WITH FACEBOOK</Text>
+            </Button>
+            <Box></Box>
+          </Box>
         </Box>
-       <Box  w={"70%"} m={"auto"}>
-       <form action="">
-        <Center >
-          <Text>Login</Text>
-        </Center>
-        <Box>
-          <Image w={"100%"} src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe5Kl9bfl5O2Nu3jvTWsYzlA9NFOoiQID_xiPux1c2C-YEnZBT' alt='imageOfTree'/>
-        </Box>
+      </Flex>
+    </Box>
+  );
+};
 
-        <Input
-          type="email"
-          className='inputelements'
-          name="name"
-          id="usrname"
-          border={"none"}
-          borderRadius={"none"}
-          borderBottom={"2px solid red"}
-          minLength="3"
-          maxLength="30"
-          autoComplete="off"
-          placeholder="Enter your Full Name"
-          _placeholder={{
-            color: 'green', // Customize the color here
-          }}
-          required
-        />
-        <Input
-          type="password"
-          className='inputelements'
-          name="name"
-          id="usrname"
-          border={"none"}
-          borderRadius={"none"}
-          borderBottom={"2px solid red"}
-          minLength="3"
-          maxLength="30"
-          autoComplete="off"
-          placeholder="Enter your Full Name"
-          _placeholder={{
-            color: 'green', // Customize the color here
-          }}
-          required
-        />
-          <Button type='submit' colorScheme='teal' size='md' w={"100%"} m={"auto"}>
-    Button
-  </Button>
-        </form>
-
-        <Box className='sepratethemfull'>
-          <Box>Forgot Password</Box>
-          <Box>New User? Sign Up</Box>
-        </Box>
-        <Center>or</Center>
-        <Button w={"100%"} className='alignThemInCenter'>
-          <Image h={"20px"} w={"20px"} src="https://pbs.twimg.com/card_img/1656560674347053056/fnoKTsp6?format=png&name=small" alt="" />
-          <Box>CONTINUE WITH GOOGLE</Box>
-         
-        </Button>
-        <Button  w={"100%"} className='alignThemInCenter'>
-          <Image h={"25px"} w={"25px"} src="https://e7.pngegg.com/pngimages/991/568/png-clipart-facebook-logo-computer-icons-facebook-logo-facebook-thumbnail.png" alt="" />
-          <Box>CONTINUE WITH FACEBOOK</Box>
-         
-        </Button>
-        <Box></Box>
-       </Box>
-      </Box>
-    </Flex>
-  </Box>
-  )
-}
-
-export default Login
+export default Login;
