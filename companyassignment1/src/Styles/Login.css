@@ -1,0 +1,43 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.background_image {
+  flex: 1;
+  background-image: url('https://media.istockphoto.com/id/1045035862/photo/canopy-of-jungle.jpg?s=612x612&w=0&k=20&c=zZOhcB3LZYJMKPtXaXWRIeMOIV144JO6yc2VMekP-bI=');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* keep it in center */
+.Center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputelements{
+  font-family: RobotoMB;
+          font-size: 18px !important;
+          color: #424242;
+          line-height: 25px;
+}
+.sepratethemfull{
+  display: flex;
+  justify-content: space-between;
+}
+.alignThemInCenter{
+  display: flex;
+  align-items: center;
+  justify-content:  space-evenly;
+  
+}
+.alignThemInCenter>Box{
+margin-left: -20px;
+}
