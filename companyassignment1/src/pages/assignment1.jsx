@@ -95,7 +95,7 @@ const Login = () => {
                 minLength="3"
                 maxLength="30"
                 autoComplete="off"
-                placeholder=" Password"
+                placeholder="Password"
                 _placeholder={{
                   color:"#60cb59"  ,
                   fontSize:"25px" 
@@ -126,10 +126,14 @@ const Login = () => {
             
             <Center fontWeight={"bold"} mb={"25px"}>or</Center>
           
-            <Button bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
-              <Image
-               bg={"white"}
-               p={1}
+            
+
+
+            <Button p={1} bg={"#4285f4"} color={"white"} w={"100%"} >
+             <Box  display={"flex"} justifyContent={"space-between"} alignItems={"center"} position={"absolute"} left={2}>
+             <Image
+              bg={"white"}
+              p={1}
                mr={15}
                 h={"30px"}
                 w={"30px"}
@@ -137,11 +141,13 @@ const Login = () => {
                 alt=""
               />
               <Text>CONTINUE WITH GOOGLE</Text>
+             </Box>
             </Button>
             <br />
             <br />
-            <Button p={1} bg={"#4285f4"} color={"white"} w={"100%"} className="alignThemInCenter">
-              <Image
+            <Button p={1} bg={"#4285f4"} color={"white"} w={"100%"} >
+             <Box  display={"flex"} justifyContent={"space-between"} alignItems={"center"} position={"absolute"} left={2}>
+             <Image
               bg={"white"}
               p={1}
                mr={15}
@@ -151,7 +157,9 @@ const Login = () => {
                 alt=""
               />
               <Text>CONTINUE WITH FACEBOOK</Text>
+             </Box>
             </Button>
+           
             <Box></Box>
           </Box>
         </Box>
